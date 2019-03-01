@@ -1,4 +1,5 @@
 #!/bin/bash
+PREVIOUS_DIR=$PWD
 
 # Update / install server
 cd /steamcmd 
@@ -9,4 +10,5 @@ Xvfb :1 -screen 0 800x600x24&
 export DISPLAY=localhost:1.0
 
 # Start game
+cd $PREVIOUS_DIR
 ./start_gameserver.sh
