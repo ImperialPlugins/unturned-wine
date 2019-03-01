@@ -16,7 +16,7 @@ To build, use `docker build . -t unturned-wine` (this will take a while...).
 
 After building, you can start your server like this:
 
-`docker run -it -e STEAM_USERNAME=myusername -e STEAM_PASSWORD=mypassword -p 27015:27015 -p 27017:27017 --restart always --name myserverinstance unturned-wine`
+`docker run -it -e STEAM_USERNAME=myusername -e STEAM_PASSWORD=mypassword -p 27015:27015 -p 27016:27016 --restart always --name myserverinstance unturned-wine`
 
 
 This will create a docker container that will listen on 27015 for Unturned and 27016 for Steam queries. It will automatically restart should the server shut down or crash.
